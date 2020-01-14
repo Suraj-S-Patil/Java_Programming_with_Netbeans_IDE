@@ -8,12 +8,12 @@ package suraj.patil.xii;
  *
  * @author TEACHER
  */
-public class NewJFrame1 extends javax.swing.JFrame {
+public class Class_2 extends javax.swing.JFrame {
 
     /**
-     * Creates new form NewJFrame1
+     * Creates new form Class_2
      */
-    public NewJFrame1() {
+    public Class_2() {
         initComponents();
     }
 
@@ -29,30 +29,51 @@ public class NewJFrame1 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(500, 400));
-        setResizable(false);
-        getContentPane().setLayout(null);
 
-        jButton1.setText("Click");
+        jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(154, 123, 53, 23);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(200, 200, 200)
+                .addComponent(jButton1)
+                .addContainerGap(222, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(188, 188, 188)
+                .addComponent(jButton1)
+                .addContainerGap(197, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-System.out.println(" Hello! "+" Test Program ");
+Methods Title,Author;
+Book x=new Book();
+x.Book();
+x.Book(Title,Author);
+x.Display();
     }//GEN-LAST:event_jButton1ActionPerformed
+class Book
+{
+    Methods Title,Author;
+    
+}
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(Methods args[]) {
         /*
          * Set the Nimbus look and feel
          */
@@ -70,13 +91,13 @@ System.out.println(" Hello! "+" Test Program ");
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Class_2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Class_2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Class_2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Class_2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -86,7 +107,7 @@ System.out.println(" Hello! "+" Test Program ");
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new NewJFrame1().setVisible(true);
+                new Class_2().setVisible(true);
             }
         });
     }
